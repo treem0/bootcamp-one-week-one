@@ -34,17 +34,17 @@ myButton.onclick = () => {
     const userIsCorrect2 = isYes(trimmedLowercaseUserAnswer2);
 
 
-    const answer1 = userIsCorrect;
-    const answer2 = userIsCorrect1;
-    const answer3 = userIsCorrect2;
+   // const answer1 = userIsCorrect;
+   // const answer2 = userIsCorrect1;
+   // const answer3 = userIsCorrect2;
 
-    if (answer1 === true) {
-        answer1 ++;
-    } if (answer2 === true) {
-        answer2 ++;
-    } if (answer3 === true) {
-        answer3 ++;
-    }
+    //if (answer1 === true) {
+      //  answer1 ++;
+    //n} if (answer2 === true) {
+      //  answer2 ++;
+    //} if (answer3 === true) {
+      //  answer3 ++;
+    // }
     alert('You have completed the quiz!');
 
     
