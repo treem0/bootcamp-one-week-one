@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    border: solid;
+    width: 450px;
+    background-color: aquamarine;
+    align-content: center;
+    text-align: center;
+}
+h3 {
+    border: solid;
+    font-family: 'Ranga', cursive;
+}
+figure {
+    border: solid;
+    border-color: black;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: black;
+}
+p {
+    font-family: 'Orbitron', sans-serif;
+    width: 600px;
+}
+li {
+    font-family: 'Orbitron', sans-serif;
+}
+.who {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.i-like-doing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.countries {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.my-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
