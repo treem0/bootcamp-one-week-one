@@ -3,3 +3,4 @@ export const isCorrect = (someString) => {
 
     return false;
 };
+

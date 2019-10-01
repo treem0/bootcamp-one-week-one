@@ -7,27 +7,31 @@ h1 {
     font-family: 'Orbitron', sans-serif;
     border: solid;
     width: 450px;
-    background-color: aquamarine;
+    background-color: #2B3945;
+    color: #83B7C0;
     align-content: center;
     text-align: center;
 }
 h3 {
     border: solid;
     font-family: 'Ranga', cursive;
+    color: #6A9A94;
 }
 figure {
     border: solid;
     border-color: black;
     padding: 10px;
     justify-content: space-between;
-    background-color: black;
+    background-color: #2B3945;
 }
 p {
     font-family: 'Orbitron', sans-serif;
     width: 600px;
+    color: #BF9181;
 }
 li {
     font-family: 'Orbitron', sans-serif;
+    color: #BF9181;
 }
 .who {
     display: flex;
@@ -48,4 +52,16 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+#results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500px;
+}
+.results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500px;
 }
