@@ -50,8 +50,12 @@ myButton.onclick = () => {
     
     if (userIsCorrect && userIsCorrect1 && userIsCorrect2) {
         document.getElementById('results').textContent = 'Okay ' + userName + ' you got 3 out of three!';
+    } if (userIsCorrect && userIsCorrect1 && !userIsCorrect2 || userIsCorrect && !userIsCorrect1 && userIsCorrect2 || !userIsCorrect && userIsCorrect1 && userIsCorrect2) {
+        document.getElementsById('results').textContent = 'Okay ' + userName + 'you got 2 out of three!';
+    } if (userIsCorrect && !userIsCorrect1 && !userIsCorrect2 || !userIsCorrect && userIsCorrect1 && !userIsCorrect2 || !userIsCorrect && !userIsCorrect1 && userIsCorrect2) {
+        document.getElementsById('results').textContent = 'Okay ' + userName + 'you got 1 out of three!';
     } if (!userIsCorrect && !userIsCorrect1 && !userIsCorrect2) {
-        document.getElementById('results').textContent = 'Okay ' + userName + ' you got 0 out of three!'; }
-};  
+        document.getElementById('results').textContent = 'Okay ' + userName + ' you got 0 out of three!';
+    }  
 
-
+}
