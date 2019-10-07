@@ -1,0 +1,31 @@
+.tower {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    border: solid;
+}
+.strip-mall {
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+}
+.building-tower {
+    border: solid;
+    height: 175px;
+    width: 200px;
+}
+.building-strip {
+    color: wheat;
+    width: 150px;
+    border: solid;
+}
+.big-strip {
+    border: solid;
+    width: 500px;
+    height: 150px;
+}
