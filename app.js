@@ -1,10 +1,3 @@
-// import { isCorrect } from './test/functions.js';
-
-
-//export const isYes = (userAnswer) => {
-//    if (userAnswer === 'yes' || userAnswer === 'y' || userAnswer === 'Yes' || userAnswer === 'Y') return alert('true');
-//    return alert('false');
-// };
 import { isYes } from './is-yes.js';
 
 const myButton = document.getElementById('action-button');
@@ -18,11 +11,6 @@ myButton.onclick = () => {
     const lowercaseUserAnswer = userAnswer.toLowerCase();
     const trimmedLowercaseUserAnswer = lowercaseUserAnswer.trim();
     const userIsCorrect = isYes(trimmedLowercaseUserAnswer);
-   // if (userIsCorrect) {
-    //    alert('Yes'); 
-   // } else {
-    //    alert('boo');
-   // }
     const userAnswer1 = prompt(userName + ', have I been to Ireland? (yes/no)');
     const lowercaseUserAnswer1 = userAnswer1.toLowerCase();
     const trimmedLowercaseUserAnswer1 = lowercaseUserAnswer1.trim();
@@ -33,29 +21,17 @@ myButton.onclick = () => {
     const trimmedLowercaseUserAnswer2 = lowercaseUserAnswer2.trim();
     const userIsCorrect2 = isYes(trimmedLowercaseUserAnswer2);
 
-
-   // const answer1 = userIsCorrect;
-   // const answer2 = userIsCorrect1;
-   // const answer3 = userIsCorrect2;
-
-    //if (answer1 === true) {
-      //  answer1 ++;
-    //n} if (answer2 === true) {
-      //  answer2 ++;
-    //} if (answer3 === true) {
-      //  answer3 ++;
-    // }
     alert('You have completed the quiz!');
 
-    
     if (userIsCorrect && userIsCorrect1 && userIsCorrect2) {
-        document.getElementById('results').textContent = 'Okay ' + userName + ' you got 3 out of three!';
-    } if (userIsCorrect && userIsCorrect1 && !userIsCorrect2 || userIsCorrect && !userIsCorrect1 && userIsCorrect2 || !userIsCorrect && userIsCorrect1 && userIsCorrect2) {
-        document.getElementsById('results').textContent = 'Okay ' + userName + 'you got 2 out of three!';
-    } if (userIsCorrect && !userIsCorrect1 && !userIsCorrect2 || !userIsCorrect && userIsCorrect1 && !userIsCorrect2 || !userIsCorrect && !userIsCorrect1 && userIsCorrect2) {
-        document.getElementsById('results').textContent = 'Okay ' + userName + 'you got 1 out of three!';
-    } if (!userIsCorrect && !userIsCorrect1 && !userIsCorrect2) {
-        document.getElementById('results').textContent = 'Okay ' + userName + ' you got 0 out of three!';
+        document.getElementById('results-go-here').textContent = 'Okay ' + userName + ' you got 3 out of three!';
+    } else if (userIsCorrect && userIsCorrect1 && !userIsCorrect2 || userIsCorrect && !userIsCorrect1 && userIsCorrect2 || !userIsCorrect && userIsCorrect1 && userIsCorrect2) {
+        document.getElementById('results-go-here').textContent = 'Okay ' + userName + ' you got 2 out of three!';
+    } else if (userIsCorrect && !userIsCorrect1 && !userIsCorrect2 || !userIsCorrect && userIsCorrect1 && !userIsCorrect2 || !userIsCorrect && !userIsCorrect1 && userIsCorrect2) {
+        document.getElementById('results-go-here').textContent = 'Okay ' + userName + ' you got 1 out of three!';
+    } else if (!userIsCorrect && !userIsCorrect1 && !userIsCorrect2) {
+        document.getElementById('results-go-here').textContent = 'Okay ' + userName + ' you got 0 out of three!';
     }  
 
-}
+   
+};
